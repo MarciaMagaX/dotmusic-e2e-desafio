@@ -1,0 +1,11 @@
+{
+  "shortRock": {
+    "id": 3,
+    "title": "Short Rock",
+    "artist": "Elvis Testley",
+    "description": "Elvis Testley",
+    "image": "https://raw.githubusercontent.com/ComunidadeTechQA/mock/main/covers/elvis.jpg",
+    "type": "album",
+    "src": "https://raw.githubusercontent.com/ComunidadeTechQA/mock/main/songs/short-rock.mp3"
+  }
+}

@@ -64,11 +64,31 @@ Funcionalidade: Reprodução de música
     Então a reprodução da música deve ser retomada a partir do ponto onde foi pausada.
 ```
 
+## 🚀 Estimativas
+
+1. **Cenários a serem testados**: 6 cenários (3 para a busca de música e 3 para a reprodução de música).
+2. **Tempo médio de execução por cenário**: Aproximadamente **3 minutos**.
+3. Tempo total para execução dos 6 cenários:
+   - 6 cenários x 3 minutos = **18 minutos**.
+4. **Tempo extra para análise de resultados e ajustes**: **10 minutos**.
+5. **Tempo para retestes e reporte de bugs**: **2 horas**.
+6. **Tempo para construção dos testes automatizados**: **1 hora**.
+7. **Tempo total para execução dos testes automatizados (todos os cenários)**: **20 segundos**.
+
+### **Estimativa final**:
+
+- **Construção dos testes automatizados**: **1 hora**
+- **Análise, ajustes e reporte de bugs**: **2 horas 10 minutos**
+
+**Total: aproximadamente 3 horas e 10 minutos**.
+
 ## 🚀 Projeto de Teste Automatizado
 
 O projeto de teste automatizado para o **DotMusic** utiliza o **Cypress** como framework de testes. Ele foi desenvolvido para validar os cenários descritos acima, garantindo que as funcionalidades principais do sistema funcionem como esperado.
 
-### Visualizar os Resultados dos Testes
+⏰ **Tempo total de execução dos testes automatizados**: Aproximadamente **20 segundos**
+
+### 📊 Visualizar os Resultados dos Testes
 
 Você pode visualizar o resultado dos testes automatizados diretamente no **Cypress Cloud**. Acesse o link público abaixo para analisar a execução dos testes no Test Replay:
 

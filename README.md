@@ -68,6 +68,12 @@ Funcionalidade: Reprodução de música
 
 O projeto de teste automatizado para o **DotMusic** utiliza o **Cypress** como framework de testes. Ele foi desenvolvido para validar os cenários descritos acima, garantindo que as funcionalidades principais do sistema funcionem como esperado.
 
+### Visualizar os Resultados dos Testes
+
+Você pode visualizar o resultado dos testes automatizados diretamente no **Cypress Cloud**. Acesse o link público abaixo para analisar a execução dos testes no Test Replay:
+
+[**Cypress Cloud - Resultados dos Testes**](https://cloud.cypress.io/projects/rd383y/runs)
+
 ### Estrutura do Projeto
 
 ```bash

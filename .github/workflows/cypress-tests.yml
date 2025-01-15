@@ -22,7 +22,7 @@ jobs:
         with:
           install-command: yarn install
           browser: electron
-          record: false
+          record: true
           spec: ${{ github.event.inputs.spec }}
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}

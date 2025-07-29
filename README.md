@@ -217,6 +217,3 @@ Esses novos testes foram criados **com base nos cenários já existentes** e vis
 
 ---
 
-**Contribuição:**
-
-Essas melhorias foram desenvolvidas com base nos cenários já existentes, com o objetivo de ampliar a cobertura de testes e fortalecer a qualidade do projeto DotMusic. Agradeço ao autor original pela base sólida e inspiradora!

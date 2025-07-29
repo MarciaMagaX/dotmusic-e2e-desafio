@@ -38,6 +38,8 @@ DotMusic é um sistema acadêmico projetado para fins de aprendizado e prática 
 Com funcionalidades como busca de músicas, organização de biblioteca e reprodução, o DotMusic oferece um ambiente ideal para
 explorar e aplicar técnicas de testes em um contexto prático e realista.
 
+> **Agradecimento especial ao autor original do projeto Fernando Papito por disponibilizar uma base tão completa e didática para a comunidade!**
+
 ## 📚 Documentação
 
 ### **US01: Busca por nome da música**
@@ -136,6 +138,9 @@ Você pode visualizar o resultado dos testes automatizados diretamente no **Cypr
 ├── e2e/
 │   ├── search.cy.js        # Testes para a funcionalidade de busca
 │   ├── playback.cy.js      # Testes para a funcionalidade de reprodução
+│   ├── accessibility.cy.js # [NOVO] Teste de acessibilidade (foco no play)
+│   ├── integration.cy.js   # [NOVO] Teste de integração básico (play + áudio)
+│   ├── player-controls.cy.js # [NOVO] Testes de controles básicos do player
 ├── fixtures/
 │   └── songs.json          # Dados simulados para testes
 ├── support/
@@ -144,6 +149,19 @@ Você pode visualizar o resultado dos testes automatizados diretamente no **Cypr
 cypress.config.js           # Configurações do Cypress
 package.json                # Dependências e scripts do projeto
 ```
+
+### Melhorias e Novos Testes Adicionados
+
+- **Acessibilidade:**
+  - Adicionado `accessibility.cy.js` para garantir que o botão de play pode receber foco via teclado.
+- **Integração:**
+  - Adicionado `integration.cy.js` validando o fluxo básico de integração do player (clicar no play e garantir que o áudio é exibido).
+- **Controles básicos do player:**
+  - Adicionado `player-controls.cy.js` para verificar a presença dos principais controles do player: botão de play, componente de áudio, tempo atual/total e barra de progresso.
+- **Ajuste de seletores:**
+  - Seletores dos testes revisados para garantir compatibilidade com o HTML atual do player.
+
+Esses novos testes foram criados **com base nos cenários já existentes** e visam complementar e fortalecer a suíte de testes do projeto.
 
 ### Pré-requisitos
 
@@ -164,6 +182,8 @@ package.json                # Dependências e scripts do projeto
 
    ```bash
    npm install
+   # ou
+   yarn install
    ```
 
 3. Execute o servidor local do DotMusic.
@@ -172,6 +192,8 @@ package.json                # Dependências e scripts do projeto
 
    ```bash
    npx cypress open
+   # ou
+   yarn cypress open
    ```
 
 5. Acesse a aba **E2E Testing** no Cypress, selecione o navegador desejado e clique em **Start E2E Testing**.
@@ -182,6 +204,8 @@ package.json                # Dependências e scripts do projeto
 
    ```bash
    npx cypress run
+   # ou
+   yarn cypress run
    ```
 
 ### Principais Custom Commands
@@ -189,4 +213,10 @@ package.json                # Dependências e scripts do projeto
 - **`cy.searchSong(searchTerm)`**: Realiza uma busca no sistema pelo termo informado.
 - **`cy.playSong(songName)`**: Reproduz uma música pelo nome.
 - **`cy.songIsPlaying(songName, duration)`**: Valida se a música está tocando.
-- **`cy.songIsPausedOrStopped(songName, duration)`**: Verifica se a música está pausada ou parada.
+- **`cy.songIsPausedOrStopped(songName, duration)`**: Verifica se a música está pausada ou 
+
+---
+
+**Contribuição:**
+
+Essas melhorias foram desenvolvidas com base nos cenários já existentes, com o objetivo de ampliar a cobertura de testes e fortalecer a qualidade do projeto DotMusic. Agradeço ao autor original pela base sólida e inspiradora!

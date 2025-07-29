@@ -34,7 +34,9 @@ npx cypress open
 
 # Desafio Técnico: **DOT Digital Group**
 
-DotMusic é um sistema acadêmico projetado para fins de aprendizado e prática em testes de software. Com funcionalidades como busca de músicas, organização de biblioteca e reprodução, o DotMusic oferece um ambiente ideal para explorar e aplicar técnicas de testes em um contexto prático e realista.
+DotMusic é um sistema acadêmico projetado para fins de aprendizado e prática em testes de software.
+Com funcionalidades como busca de músicas, organização de biblioteca e reprodução, o DotMusic oferece um ambiente ideal para
+explorar e aplicar técnicas de testes em um contexto prático e realista.
 
 ## 📚 Documentação
 

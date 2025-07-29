@@ -32,6 +32,18 @@ Cypress.Commands.add('playSong', (songName) => {
         .click();
 });
 
+Cypress.Commands.add('songIsPlaying', (songName, timeout = 10000) => {
+    cy.contains('.song', songName)
+        .find('.pause', { timeout })
+        .should('be.visible');
+});
+
+Cypress.Commands.add('songIsPausedOrStopped', (songName, timeout = 10000) => {
+    cy.contains('.song', songName)
+        .find('.play', { timeout })
+        .should('be.visible');
+});
+
 Cypress.Commands.add('searchSong', (searchTerm) => {
     cy.get('#search-input').type(searchTerm);
     cy.contains('button', 'Buscar').click();

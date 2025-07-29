@@ -1,6 +1,42 @@
+# 🎵 dotmusic-e2e-desafio
+
+[![Testes E2E - Cypress](https://img.shields.io/badge/Cypress-tests-brightgreen?logo=cypress&logoColor=white)](https://github.com/MarciaMagaX/dotmusic-e2e-desafio)
+
+Este repositório é um clone do projeto [`papitodev/dotmusic-e2e`](https://github.com/papitodev/dotmusic-e2e), desenvolvido originalmente como desafio técnico da **DOT Digital Group**.
+
+Nesta versão, expandi os testes automatizados com foco em:
+
+- 🧪 Boas práticas de automação com Cypress
+- 📋 Escrita clara de casos de teste
+- 💡 Comentários explicativos com fins didáticos
+- 🛠️ Estrutura organizada de comandos customizados (`cy.*`)
+- ❌ Testes negativos (validações e mensagens de erro)
+- ✅ Validações visuais e funcionais na interface
+
+## ✨ Melhorias implementadas por @MarciaMagaX
+
+Este projeto foi adaptado e ampliado como parte do meu portfólio na área de QA/DevOps. As modificações incluem:
+
+- ✅ Criação de novos cenários baseados em critérios de aceitação
+- ✅ Verificações adicionais em componentes interativos
+- ✅ Validação de mensagens de erro e sucesso
+- ✅ Adição de comentários explicativos no código
+- ✅ Reorganização da estrutura dos testes
+
+## 🚀 Como executar os testes
+
+> Requisitos: Node.js e o Cypress instalados
+
+```bash
+npm install
+npx cypress open
+
+
 # Desafio Técnico: **DOT Digital Group**
 
-DotMusic é um sistema acadêmico projetado para fins de aprendizado e prática em testes de software. Com funcionalidades como busca de músicas, organização de biblioteca e reprodução, o DotMusic oferece um ambiente ideal para explorar e aplicar técnicas de testes em um contexto prático e realista.
+DotMusic é um sistema acadêmico projetado para fins de aprendizado e prática em testes de software.
+Com funcionalidades como busca de músicas, organização de biblioteca e reprodução, o DotMusic oferece um ambiente ideal para
+explorar e aplicar técnicas de testes em um contexto prático e realista.
 
 > **Agradecimento especial ao autor original do projeto Fernando Papito por disponibilizar uma base tão completa e didática para a comunidade!**
 
@@ -177,10 +213,7 @@ Esses novos testes foram criados **com base nos cenários já existentes** e vis
 - **`cy.searchSong(searchTerm)`**: Realiza uma busca no sistema pelo termo informado.
 - **`cy.playSong(songName)`**: Reproduz uma música pelo nome.
 - **`cy.songIsPlaying(songName, duration)`**: Valida se a música está tocando.
-- **`cy.songIsPausedOrStopped(songName, duration)`**: Verifica se a música está pausada ou parada.
+- **`cy.songIsPausedOrStopped(songName, duration)`**: Verifica se a música está pausada ou 
 
 ---
 
-**Contribuição:**
-
-Essas melhorias foram desenvolvidas com base nos cenários já existentes, com o objetivo de ampliar a cobertura de testes e fortalecer a qualidade do projeto DotMusic. Agradeço ao autor original pela base sólida e inspiradora! 

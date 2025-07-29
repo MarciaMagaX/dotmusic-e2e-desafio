@@ -33,15 +33,17 @@ Cypress.Commands.add('playSong', (songName) => {
 });
 
 Cypress.Commands.add('songIsPlaying', (songName, timeout = 10000) => {
-    cy.contains('.song', songName)
-        .find('.pause', { timeout })
-        .should('be.visible');
+    // Garante que o áudio está tocando após clicar no play
+    cy.get('audio', { timeout }).should(($audio) => {
+        expect($audio[0].paused).to.eq(false);
+    });
 });
 
 Cypress.Commands.add('songIsPausedOrStopped', (songName, timeout = 10000) => {
-    cy.contains('.song', songName)
-        .find('.play', { timeout })
-        .should('be.visible');
+    // Garante que o áudio está pausado
+    cy.get('audio', { timeout }).should(($audio) => {
+        expect($audio[0].paused).to.eq(true);
+    });
 });
 
 Cypress.Commands.add('searchSong', (searchTerm) => {

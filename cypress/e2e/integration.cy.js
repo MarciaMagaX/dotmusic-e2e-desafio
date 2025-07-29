@@ -15,4 +15,4 @@ describe('Player de música - fluxo básico de integração', () => {
     cy.get('.play').first().click();
     cy.get('audio').should('exist');
   });
-});
+}); 

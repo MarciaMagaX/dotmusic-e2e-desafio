@@ -24,22 +24,12 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+// Comandos customizados realmente usados no player atual:
+
 Cypress.Commands.add('playSong', (songName) => {
     cy.contains('.song', songName)
         .find('button')
         .click();
-});
-
-Cypress.Commands.add('songIsPlaying', (songName, timeout = 10000) => {
-    cy.contains('.song', songName)
-        .find('.pause', { timeout })
-        .should('be.visible');
-});
-
-Cypress.Commands.add('songIsPausedOrStopped', (songName, timeout = 10000) => {
-    cy.contains('.song', songName)
-        .find('.play', { timeout })
-        .should('be.visible');
 });
 
 Cypress.Commands.add('searchSong', (searchTerm) => {

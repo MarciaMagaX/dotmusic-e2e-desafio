@@ -1,6 +1,6 @@
 import { shortRock } from '../fixtures/songs.json';
 
-describe('Player de música - fluxo básico de integração', () => {
+describe('Player de música - acessibilidade básica', () => {
   beforeEach(() => {
     cy.intercept('GET', '**/songs', {
       statusCode: 200,
@@ -11,8 +11,8 @@ describe('Player de música - fluxo básico de integração', () => {
     cy.wait('@getSongs');
   });
 
-  it('deve permitir clicar no play e exibir o áudio', () => {
-    cy.get('.play').first().click();
-    cy.get('audio').should('exist');
+  it('botão de play deve ser focável via teclado', () => {
+    cy.get('.play').first().focus();
+    cy.get('.play').first().should('be.focused');
   });
-});
+}); 
